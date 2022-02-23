@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Activities in Hawaii!</title>
+        <link rel = "stylesheet" href = "styles.css">
+
+    </head>
+
+    <body class = "activitiesPage">
+        <script src = "manager.js"></script>
+
+
+        <div class = "header">
+            <h1>Activities!!!</h1>
+            <table style = "width:100%">
+                <tr>
+                    <th>
+                        <button value = "Surfing" class="button button1" id = "surfBtn" onclick = "addActivity('surfBtn')">Surfing</button>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <button value = "Hang Gliding" class="button button1" id = "hangGlidebtn" onclick = "addActivity('hangGlidebtn')">Hang Gliding</button>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <button value = "Biking" class="button button1" id = "bikebtn" onclick = "addActivity('bikebtn')">Biking</button>
+                    </th>
+                </tr>
+
+            </table>
+        </div>
+        <div>
+
+
+
+        </div>
+        <p id = "activitySelect"></p>
+        <table>
+            <tr>
+                <th>
+                    <a href="index.html">
+                        <button class="button button3" onclick = "setActivity()">Go to Home</button>
+                    </a>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <a href="hotels.html">
+                        <button class="button button3" onclick = "setActivity()">Go to Hotels</button>
+                    </a>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <a href="beaches.html">
+                        <button class="button button3" onclick = "setActivity()">Go to Beaches</button>
+                    </a>
+                </th>
+            </tr>
+        </table>
+
+
+
+    </body>
+</html>

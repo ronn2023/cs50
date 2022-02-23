@@ -1,0 +1,63 @@
+.homepage{
+    background:  url("original_hawaii_202019.jpg") no-repeat fixed center;
+
+}
+.activitiesPage{
+    background:  url("activities.jpg") no-repeat fixed center;
+
+}
+
+*{
+    font-size:110%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    padding: 50px;
+    text-align:center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+}
+
+.button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.button1{
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+}
+.button1:hover{
+    background-color: #008CBA;
+    color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #f44336;
+}
+
+.button2:hover {
+  background-color: #f44336;
+  color: white;
+}
+.button3 {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+}
+
+.button3:hover {background-color: #e7e7e7;}
