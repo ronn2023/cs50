@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+{% block main %}
+
+
+
+     <h2>Home</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Symbol</th>
+                            <th>Name</th>
+                            <th>Shares</th>
+                            <th>Price</th>
+                            <th>Original Price</th>
+                            <th>TOTAL</th>
+                            <th>
+                                <form action="/" method = "post">
+                                    <input  class="btn btn-primary"  type="submit" name="delete" value="Clear Entries">
+                                </form>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- TODO: Loop through the database entries to display them in this table -->
+
+                        {% for ledger in ledgers %}
+                            <tr>
+                                <td>
+                                    {{ ledger.stockSymbol }}
+                                </td>
+                                <td>{{ ledger.stockName }}</td>
+                                <td>{{ ledger.numStocks }}</td>
+                                <td>{{ "$%.2f"|format(ledger.curStockPrice|round(2)) }}</td>
+                                <td>{{ "$%.2f"|format(ledger.OstockPrice|round(2)) }}</td>
+                                <td>{{ "$%.2f"|format(ledger.OstockPrice * ledger.numStocks) }}</td>
+                            </tr>
+
+
+                        {% endfor %}
+
+                        <tr>
+                            <td>CASH</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>{{ "$%.2f"|format(cash) }} </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td> <b>{{ "$%.2f"|format(totalMoney) }}</b> </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+{% endblock %}
